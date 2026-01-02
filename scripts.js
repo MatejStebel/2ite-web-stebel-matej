@@ -20,8 +20,8 @@ function animateGlow() {
     glow.style.opacity = baseOpacity + flicker;
 
     glow.style.filter = `blur(35px) brightness(${1.4 + flickerRed * 2}) 
-    saturate(${1.25 + flickerRed * 2})`;
-    glow.style.boxShadow = `0 0 40px rgba(${255}, ${120 - flickerRed * 80}, ${0 + flickerRed * 120}, ${0.2 + flickerRed})`;
+    saturate(${1.25 + flickerRed * 2}) hue-rotate(-10deg)`;
+    glow.style.boxShadow = `0 0 40px rgba(${255}, ${120 - flickerRed * 80}, ${0 + flickerRed * 120}, ${0.2 + flickerRed}) hue-rotate(-20deg)`;
     flicker *= 0.9;
     flickerRed *= 0.88;
     t += speed;
