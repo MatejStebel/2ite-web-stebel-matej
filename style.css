@@ -4,8 +4,10 @@ body {
     background: #040404;
     color: #000000;
     text-shadow:
+    0 0 6px rgb(255, 140, 40),
     0 0 14px rgb(255, 140, 40),
-    0 0 16px rgb(255, 102, 0);
+    0 0 29px rgb(255, 102, 0);
+    font-weight: 600;
     user-select: none;
 }
 
@@ -14,7 +16,7 @@ body::before {
     position: fixed;
     inset: 0;
 
-    background: rgba(255, 230, 180, 0.04);
+    background: rgba(255, 230, 180, 0.05);
     pointer-events: none;
 
     z-index: -2;
@@ -31,11 +33,18 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(70vw, 520px);
+    width: clamp(220px, 45vmin, 420px);
     aspect-ratio: 1;
     z-index: -1;
     pointer-events: none;
 }
+
+@media (max-width: 600px) {
+    #ring-container {
+        width: 38vmin;
+    }
+}
+
 
 #ring {
     width: 100%;
@@ -87,10 +96,10 @@ html, body {
 }
 
 .box {
-    border-radius: 10%;
-    width: 33%;
+    border-radius: 2rem;
+    width: 29%;
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .box#left-box-1{
