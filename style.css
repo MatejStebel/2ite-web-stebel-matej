@@ -104,13 +104,17 @@ html, body {
     padding: 0.4rem;
 }
 
-.box#left-box-1{
+.box.left-box{
     margin-left: 1rem;
 }
 
-.box#right-box-1{
+.box.right-box{
     margin-right: 1rem;
     float: right;
+}
+
+.box.middle-box{
+    margin: 0 auto;
 }
 
 .AtR {

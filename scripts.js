@@ -1,4 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
 const glow = document.getElementById('ring-glow');
 
 let t = 0;
