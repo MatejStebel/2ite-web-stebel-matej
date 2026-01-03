@@ -9,6 +9,16 @@ body {
     user-select: none;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255, 230, 180, 0.04);
+    pointer-events: none;
+
+    z-index: -2;
+}
 
 
 
