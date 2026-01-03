@@ -100,6 +100,8 @@ html, body {
     width: 29%;
     height: fit-content;
     background-color: rgba(0, 0, 0, 1);
+    margin-bottom: 2rem;
+    padding: 0.4rem;
 }
 
 .box#left-box-1{
