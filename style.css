@@ -1,12 +1,16 @@
 body {
     padding: 0;
     margin: 0;
-    background: #000;
-    color: #050301;
+    background: #040404;
+    color: #000000;
     text-shadow:
     0 0 14px rgb(255, 140, 40),
     0 0 16px rgb(255, 102, 0);
+    user-select: none;
 }
+
+
+
 
 html, body {
     min-height: 100%;
