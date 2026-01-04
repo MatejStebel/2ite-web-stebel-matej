@@ -26,6 +26,8 @@ body::before {
 
 html, body {
     min-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #ring-container {
@@ -159,4 +161,8 @@ html, body {
 #right-10 {
     margin-right: 1rem;
     margin-bottom: 0rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
