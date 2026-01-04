@@ -96,10 +96,6 @@ html, body {
     margin-bottom: 2rem;
 }
 
-.row.bearer {
-    justify-content: left;
-}
-
 .box {
     border-radius: 2rem;
     width: 29%;
@@ -158,4 +154,9 @@ html, body {
 
 .middle {
     width: fit-content;
+}
+
+#right-10 {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
 }
